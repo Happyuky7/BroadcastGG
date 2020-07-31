@@ -7,13 +7,13 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import broadcastgg.main.Mainbroadcastgg;
+import broadcastgg.main.Main;
 
 public class helpcommando implements CommandExecutor{
 
-	private Mainbroadcastgg plugin;
+	private Main plugin;
 	
-	public helpcommando(Mainbroadcastgg plugin){
+	public helpcommando(Main plugin){
 		this.plugin = plugin;
 	}
 	
@@ -23,7 +23,6 @@ public class helpcommando implements CommandExecutor{
 			return false;	
 		}else{
 			Player jugador = (Player) sender;
-			jugador.sendMessage(plugin.nombre+ChatColor.WHITE+" ");
 			jugador.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b<---------------------------------------------------------------->"));
 	        jugador.sendMessage(ChatColor.translateAlternateColorCodes('&', "&d<---------------------------&4[&aBroadcastGG&4]&d------------------------>"));
 	        jugador.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6Author: &aHappyRogelio7 "));
@@ -43,7 +42,7 @@ public class helpcommando implements CommandExecutor{
 	        jugador.sendMessage(ChatColor.translateAlternateColorCodes('&', "&d<---------------------------&4[&aBroadcastGG&4]&d------------------------>"));
 			jugador.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b<---------------------------------------------------------------->"));
 			if(args.length > 0) {
-				if(args[0].equalsIgnoreCase("help1")){
+				if(args[0].equalsIgnoreCase(" ")){
 					
 				}else{
 					
