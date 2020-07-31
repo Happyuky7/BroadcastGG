@@ -1,22 +1,4 @@
-package broadcast.comandos;
 
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
-import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
-
-import broadcastgg.main.Main;
-
-public class helpcommando implements CommandExecutor{
-
-	private Main plugin;
-	
-	public helpcommando(Main plugin){
-		this.plugin = plugin;
-	}
-	
 	public boolean onCommand(CommandSender sender, Command comando, String label, String[] args) {
 		if(!(sender instanceof Player)){
 			Bukkit.getConsoleSender().sendMessage(plugin.nombre+ChatColor.WHITE+" no puedes ejectucar ese comando desde la consola");
